@@ -41,5 +41,5 @@ user_input = st.text_input("You:", placeholder="Type your question here...")
 
 # If there's a user input, get the response from the chatbot
 if user_input:
-    st.chat_message("user", user_input)
+    st.chat_message("user: "+user_input)
     generate_text(user_input)
